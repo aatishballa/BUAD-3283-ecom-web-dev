@@ -1,0 +1,74 @@
+body {
+    background-color: white;
+    margin: 0;  <!-- removes body margin-->
+    padding: 0;  <!-- removes body margin-->
+}
+
+header{
+  text-align: center;
+  background-color:#443144;
+  height: 100px;
+}
+
+footer{
+  background-color:#443144;
+  height: 200px;
+}
+img{
+  border-radius: 50%;
+  padding: 20px 20px;
+}
+
+p{
+font-family: Helvetica,sans-serif;
+font-size:18px;
+color:#555759;
+}
+
+.contact_details{
+  margin: auto;
+  padding: 20px;
+  float: left;
+
+}
+#name{
+  font-size:32px;
+}
+
+.Vcard{
+  box-shadow: 0 5px 10px 2px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: auto;
+  background-color: white;
+  padding: 0;
+  width: 50%;
+}
+
+.title{
+font-family: Helvetica,sans-serif;
+font-size: 42px;
+font-weight: bold;
+background-color: #443144;
+color: white;
+text-align: center;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 5px 10px 2px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: auto;
+    background-color: #baa7ba;
+    padding: 0;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 4px 0 rgba(0,0,0,0.2);
+}
+/* Clear floats after the columns */
+.card:after {
+    content: "";
+    display: table;
+    clear: both;
+}
