@@ -2,84 +2,123 @@
 <html>
 <head>
 <title>Portfolio</title>
-
+<link href='https://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet'>
 <link rel="stylesheet" type="text/css" href="style.css">
 <script type="application/javascript" src="/scripts.js"></script>
 </head>
 <body>
+  <!-- Side navigation -->
+  <div class="sidenav">
+    <a href="#">Skills</a>
+    <a href="#">Work Experience</a>
+    <a href="#">Projects</a>
+    <a href="#">About me</a>
 
-<header>
-TODO:Insert Menu here
-</header>
-<br />
-<div class="Vcard">
-    <img src="test-image.jpg" alt="test-image" height="300" width="300" />
-    <p class="contact_details">
-      Aatish Balla
-      aatishballa@gmail.com <br/>
-      www.github.com/aatishballa<br/>
-      www.linkedin.com/in/aatishballa
-    </p>
-</div>
-<br />
-
-<div class="card">
-  <p class="title">
-    Skills:
-  </p>
-  <div class="catg 1">
-    <p>
-      - Programming Language: Python, JAVA, C++, C#, VBA <br />
-    </p>
   </div>
-<div class="catg 2">
-  <p>
-    - Database: MS – Access, MySQL<br />
-  </p>
+<div class="container">
+  <div class="Vcard">
+      <img id="imgs" src="test-image.jpg" alt="test-image" height="270" width="270" />
+      <div class="contact_details">
+        <h1>Aatish Balla</h1>
+        <h2>BSc. Computer Science</h2><br/>
+        <h2>Bemidji State University</h2><br/>
+        <h3>Currently seeking a Web Developer Intern</h3><br />
+        <div>
+          <img class="social" src="linkedin.svg" width="30" height="30" />
+          <img class="social" src="insta.svg" width="30" height="30" />
+          <img class="social" src="twit.svg" width="30" height="30" />
+          <img class="social" src="github.svg" width="30" height="30" />
+        </div>
+
+      </div>
+
+  </div>
 </div>
 
-<div class="catg 3">
-  <p>
-  - Web Development: HTML, CSS, JavaScript <br />
-  </p>
-
+<div class="title">
+  Skills:
 </div>
+<div class="card">
+  <div>
+    <div class="catg">
+      <div class="holder">
+          <img src="code.svg" width="65" height="65" /> <br />
+      </div>
+
+         <li>Python</li>
+         <li>JAVA</li>
+         <li>C++</li>
+         <li>C# </li>
+         <li> VBA </li>
+
+    </div>
+  <div class="catg">
+    <div class="holder">
+        <img src="db.svg" width="65" height="65" /> <br />
+    </div>
+
+       <li>MS – Access</li>
+       <li> MySQL</li>
+
+  </div>
+
+  <div class="catg">
+    <div class="holder">
+        <img src="web.svg" width="65" height="65" /> <br />
+    </div>
+       <li>HTML</li>
+       <li> JavaScript</li>
+       <li>CSS</li>
+  </div>
+
+  </div>
+</div>
+
+<div class="title">
+  Work Experience:
 </div>
 
 <div class="card">
-  <p class="title">
-    Work Experience:
-  </p>
-  <p>
-Bemidji State University, Bemidji, MN
-- Lead Technical Support, Jan 2016 – Present
-- PXE/Casper deployment and imaging.
-- Troubleshooting user profiles/ rebinding workstations to a domain.
-- Upgrading existing laptops and PC’s with SSD’s and secure wiping hard drive
-- Evaluating system potential by testing compatibility of new programs on existing system.
-- Provide phone and hands-on technical support on a variety of software and hardware issues.
-</p>
-<p>
-  Bemidji State University, Bemidji, MN
-- AV Technical Assistant, Aug 2015 – Present
-- Providing assistance with audio visual technology in the classrooms, meeting spaces across campus and events held on campus.
-- Video recording and live streaming classes or campus events, video editing and duplication, and providing assistance to support calls for help with classroom technical problems.
-  </p>
+  <div class="work_catg">
+    <h1>Lead Technical Support, Jan 2016 – </h1> <div class="Present">Current</div>
+    <h2>Bemidji State University, Bemidji, MN</h2>
+    <ul>
+      <li>PXE/Casper deployment and imaging.</li>
+      <li>Evaluating system potential by testing compatibility of new programs on existing system.</li>
+      <li>Troubleshooting user profiles/ rebinding workstations to a domain.</li>
+      <li>Upgrading existing laptops and PC’s with SSD’s and secure wiping hard drive</li>
+      <li>Provide phone and hands-on technical support on a variety of software and hardware issues.</li>
+    </ul>
+  </div>
+
+  <div class="work_catg">
+    <h1>AV Technical Assistant, Aug 2015 – </h1> <div class="Present">Current</div>
+    <h2>Bemidji State University, Bemidji, MN</h2>
+    <ul>
+      <li>
+        Providing assistance with audio visual technology in the classrooms, meeting spaces across campus and events held on campus.
+      </li>
+      <li>
+        Video recording and live streaming classes or campus events, video editing and duplication, and providing assistance to support calls for help with classroom technical problems.
+      </li>
+    </ul>
+  </div>
+
 </div>
 
+<div class="title">
+  Projects:
+</div>
 <div class="card">
-  <p class="title">
-    Projects:
-  </p>
   <p>
     Test paragraoh
   </p>
 </div>
 
+<div class="title">
+  About me:
+</div>
 <div class="card">
-  <p class="title">
-    About me:
-  </p>
 <p> Test paragraoh
 </p>
 </div>

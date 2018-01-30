@@ -1,73 +1,103 @@
 body {
     background-color: white;
-    margin: 0;  <!-- removes body margin-->
-    padding: 0;  <!-- removes body margin-->
+    margin: 0;   removes body margin-->
+    overflow-x: hidden;
 }
 
-header{
-  text-align: center;
-  background-color:#443144;
-  height: 100px;
-  color: white;
+h1,h2,h3,h4{
+  margin: auto;
+  font-family: Calibri;
+  color:#555759;
+  padding: auto;
+  float: left;
+  clear: both;
 }
 
 footer{
   background-color:#443144;
   height: 200px;
   color:white;
+  margin-left: 160px;
+  margin-right: auto;
 }
-img{
+
+#imgs{
   border-radius: 50%;
-  padding: 20px 20px;
-}
-
-p{
-font-family: Helvetica,sans-serif;
-font-size:18px;
-color:#555759;
-padding: 20px;
-
-}
-
-.contact_details{
-  margin: auto;
-  padding: 20px;
+  padding: 15px;
   float: left;
 
 }
 
+p,ul,li{
+font-family: Helvetica,sans-serif;
+font-size:18px;
+color:#555759;
+clear: both;
+}
+
+.social{
+  float:left;
+  margin:auto;
+  margin-top: 10px;
+  padding: 5px;
+}
+.contact_details{
+  float: right;
+  padding: 20px;
+  border-left: 6px solid green;
+  height: 200px;
+  margin-top: 10px;
+}
+.contact_details h1,h2,h3,h4{
+  margin-top: 10px;
+}
+.container{
+  padding-left: 160px;
+}
 .Vcard{
   box-shadow: 0 5px 10px 2px rgba(0,0,0,0.2);
   transition: 0.3s;
-  margin: auto;
   background-color: white;
-  padding: 0;
-  width: 50%;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 0px 10px;
+}
+
+.Vcard::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .title{
-font-family: Helvetica,sans-serif;
+font-family:'Sancreek',Helvetica,sans-serif;
 font-size: 42px;
-font-weight: bold;
 background-color: #443144;
 color: white;
+text-align: left;
+margin-top:40px ;
+padding: 20px;
+padding-left: 160px;
 text-align: center;
-padding:30px;
+text-shadow: 10px;
+
 }
 
 .card {
-    /* Add shadows to create the "card" effect */
     box-shadow: 0 5px 10px 2px rgba(0,0,0,0.2);
     transition: 0.3s;
-    margin: auto;
-    background-color: #baa7ba;
-    padding: 0;
+    background-color: white;
+    margin-left: 160px;
 }
+
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 4px 0 rgba(0,0,0,0.2);
 }
+
+
 /* Clear floats after the columns */
 .card:after {
     content: "";
@@ -75,11 +105,94 @@ padding:30px;
     clear: both;
 }
 
-.catg{
- float: left;
- margin: auto;
- padding-left: 20px;
- padding-right: 20px;
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 30px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    font-family: impact;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav img{
+  margin: auto;
+  margin-top: 50px;
+  display: block;
+    border-radius: 30%;
+}
+
+.sidenav img:hover{
+  transition: 0.5s;
+  background-color: white;
+ box-shadow: 0 3px 2px 2px rgba(0,0,0,0.2);
+
 
 
 }
+.catg{
+float: left;
+width: 33%;
+margin: auto;
+text-align: center;
+padding:0px;
+}
+
+.work_catg{
+    margin:auto;
+    padding: 25px;
+    width: 70%
+
+}
+.holder img{
+  margin: auto;
+  margin-top: 20px;
+  display: block;
+  }
+
+.Present{
+  font-family: Calibri;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: green;
+  border-radius: 20px;
+  color: white;
+  margin-left: 10px;
+  margin-top: 3px;
+  padding: 3px;
+  width: 100px;
+  float: left;
+  text-align: center;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+    .catg  {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .catg  {
+        width: 100%;
+    }
