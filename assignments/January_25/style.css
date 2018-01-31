@@ -15,10 +15,12 @@ h1,h2,h3,h4{
 
 footer{
   background-color:#443144;
-  height: 200px;
+  height: 100px;
   color:white;
-  margin-left: 160px;
-  margin-right: auto;
+  margin-left:  160px;
+  margin-top: 80px;
+  text-align: center;
+  font-family: Calibri;
 }
 
 #imgs{
@@ -157,10 +159,10 @@ text-align: center;
 padding:0px;
 }
 
-.work_catg{
+.div_inside_card{
     margin:auto;
     padding: 25px;
-    width: 70%
+    width: 55%;
 
 }
 .holder img{

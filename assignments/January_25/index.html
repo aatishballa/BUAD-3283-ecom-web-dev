@@ -2,19 +2,20 @@
 <html>
 <head>
 <title>Portfolio</title>
-<link href='https://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet'>  <!-- for googlefonts -->
 <link rel="stylesheet" type="text/css" href="style.css">
 <script type="application/javascript" src="/scripts.js"></script>
 </head>
 <body>
   <!-- Side navigation -->
   <div class="sidenav">
-    <a href="#">Skills</a>
-    <a href="#">Work Experience</a>
-    <a href="#">Projects</a>
-    <a href="#">About me</a>
-
+    <a href="#an_abt">About me</a>
+    <a href="#an_skill">Skills</a>
+    <a href="#an_work">Work Experience</a>
+    <a href="#an_pro">Projects</a>
   </div>
+
+  <!-- Card at the top of the page-->
 <div class="container">
   <div class="Vcard">
       <img id="imgs" src="test-image.jpg" alt="test-image" height="270" width="270" />
@@ -23,18 +24,36 @@
         <h2>BSc. Computer Science</h2><br/>
         <h2>Bemidji State University</h2><br/>
         <h3>Currently seeking a Web Developer Intern</h3><br />
-        <div>
+        <a href="https://www.linkedin.com/in/aatishballa/">
           <img class="social" src="linkedin.svg" width="30" height="30" />
+        </a>
+        <a href="https://www.instagram.com">
           <img class="social" src="insta.svg" width="30" height="30" />
+        </a>
+        <a href="https://www.twitter.com">
           <img class="social" src="twit.svg" width="30" height="30" />
+        </a>
+        <a href="https://github.com/aatishballa">
           <img class="social" src="github.svg" width="30" height="30" />
-        </div>
+        </a>
 
       </div>
 
   </div>
 </div>
 
+<a name="#an_abt" id="an_abt"></a>   <!-- anchor for sidenav -->
+<div class="title">
+  About me:
+</div>
+<div class="card">
+  <div class="div_inside_card">
+    <p> Hi ! I am Aatish. I am a senior at BSU going for Computer Science. Check out my online portfolio !
+    </p>
+  </div>
+</div>
+
+<a name="an_skill" id="an_skill"></a>    <!-- anchor for sidenav -->
 <div class="title">
   Skills:
 </div>
@@ -44,42 +63,43 @@
       <div class="holder">
           <img src="code.svg" width="65" height="65" /> <br />
       </div>
-
-         <li>Python</li>
-         <li>JAVA</li>
-         <li>C++</li>
-         <li>C# </li>
-         <li> VBA </li>
-
+      <p>
+        Python<br />
+        Java<br />
+        C++<br />
+        C# <br />
+        VBA
+      </p>
     </div>
   <div class="catg">
     <div class="holder">
         <img src="db.svg" width="65" height="65" /> <br />
     </div>
-
-       <li>MS – Access</li>
-       <li> MySQL</li>
-
+    <p>
+      MS – Access</br>
+      MySQL
+    </p>
   </div>
 
   <div class="catg">
     <div class="holder">
         <img src="web.svg" width="65" height="65" /> <br />
     </div>
-       <li>HTML</li>
-       <li> JavaScript</li>
-       <li>CSS</li>
-  </div>
-
+    <p>
+      HTML</br>
+      JavaScript</br>
+      CSS
+    </p>
   </div>
 </div>
+</div>
 
+<a name="an_work" id="an_work"></a>   <!-- anchor for sidenav -->
 <div class="title">
   Work Experience:
 </div>
-
 <div class="card">
-  <div class="work_catg">
+  <div class="div_inside_card">
     <h1>Lead Technical Support, Jan 2016 – </h1> <div class="Present">Current</div>
     <h2>Bemidji State University, Bemidji, MN</h2>
     <ul>
@@ -91,7 +111,7 @@
     </ul>
   </div>
 
-  <div class="work_catg">
+  <div class="div_inside_card">
     <h1>AV Technical Assistant, Aug 2015 – </h1> <div class="Present">Current</div>
     <h2>Bemidji State University, Bemidji, MN</h2>
     <ul>
@@ -103,25 +123,36 @@
       </li>
     </ul>
   </div>
-
 </div>
 
+<a name="#an_pro" id="an_pro"></a>   <!-- anchor for sidenav -->
 <div class="title">
   Projects:
 </div>
 <div class="card">
+<div class="div_inside_card">
+  <h2>Deer Hunting App</h2>
   <p>
-    Test paragraoh
+    Android App, that stores and retrieves deer paths and details: built using serialization, fragments, canvas view and SQLlite
+    <br />
+    <a href="https://github.com/aatishballa/Android/tree/master/Deer%20Hunting%20App">See in GitHub</a>
+  </p>
+  <h2>Dice 4-5-6</h2>
+  <p>
+    Multiplayer android game/model of real 4-5-6 dice game
+    <br />
+    <a href="https://github.com/aatishballa/Android/tree/master/Dice%20Game">See in GitHub</a>
+  </p>
+  <h2>DataBank</h2>
+  <p>
+    Console C++ application that allows to manage customer's Bank Details.
+    <br />
+    <a href="https://github.com/aatishballa/DataBank">See in GitHub</a>
   </p>
 </div>
+</div>
 
-<div class="title">
-  About me:
-</div>
-<div class="card">
-<p> Test paragraoh
-</p>
-</div>
+
 <br />
 <footer>
 Posted By : Aatish Balla
