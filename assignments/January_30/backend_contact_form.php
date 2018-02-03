@@ -6,7 +6,7 @@
 
 <body>
   <?php
-  echo "<p> Hi {$_GET['name']} !</p>";
+  echo "<h1> Hi {$_POST['name']} !</h1>";
   ?>
 </body>
 </html>
