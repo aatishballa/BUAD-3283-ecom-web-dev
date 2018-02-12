@@ -12,6 +12,12 @@
 </head>
 
 <body>
+    <?php
+         if (isset($_SESSION['error_message'])) {
+           echo '<h1 class="word">' . $_SESSION['error_message'] . '</h1>';
+           unset($_SESSION['error_message']);
+         }
+       ?>
 <h1>Register and be a member of BSU Mart</h1>
 <form action="endpoint.php" method="post">
   <fieldset>
@@ -39,5 +45,10 @@
     <input type="submit" name="submit" value="Submit" id="submit"">
   </fieldset>
 </form>
+<footer>
+  **Note - <br>
+    Using POST to send form details to endpoint.php </br>
+    Session to validate email address. Upon invalid email address, page will be redirected with error message.
+</footer>
 </body>
 </html>

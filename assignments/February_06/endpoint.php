@@ -4,6 +4,7 @@
   foreach ($_POST as $key => $value) {
       $_SESSION[$key] = $value;
   }
+
   if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
         $_SESSION['error_message'] = "The email address you submitted is invalid!";
         // Set the return location (similar to window.location in JS)
@@ -25,7 +26,11 @@
   <?php
   echo "<h1 class='word'> Hi {$_POST['name']} !</h1>";
   echo "<h1> Welcome to BSU Mart</h1>";
-  //echo"<h1 class='word'>{$_POST['phone']}</h1>";
+  echo "<h1> We received your contact details.</h1>";
+  echo"<h1 class='word'>{$_POST['phone']}</h1>";
+  echo"<h1 class='word'>{$_POST['email']}</h1>";
+
+
   ?>
 
 

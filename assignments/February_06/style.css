@@ -7,3 +7,9 @@ h1{
 .word{
   color:red;
 }
+
+.error_m{
+	color:red;
+	background-color: yellow;
+	border: dashed blue;
+}
