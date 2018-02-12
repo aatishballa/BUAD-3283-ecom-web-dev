@@ -5,13 +5,13 @@
       $_SESSION[$key] = $value;
   }
 
+  //validate email address if not valid, then add error_message to session them redirect page
   if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
         $_SESSION['error_message'] = "The email address you submitted is invalid!";
-        // Set the return location (similar to window.location in JS)
         header("location: index.php");
-        // After the redirect we need to exit the script.
         exit();
     }
+  //test to check my session vars
   print_r($_SESSION);
 ?>
 
@@ -29,11 +29,7 @@
   echo "<h1> We received your contact details.</h1>";
   echo"<h1 class='word'>{$_POST['phone']}</h1>";
   echo"<h1 class='word'>{$_POST['email']}</h1>";
-
-
   ?>
-
-
 
 </body>
 </html>
