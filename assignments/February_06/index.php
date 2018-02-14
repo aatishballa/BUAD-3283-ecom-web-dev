@@ -44,11 +44,15 @@
 
     <input type="submit" name="submit" value="Submit" id="submit"">
   </fieldset>
-</form>
-<footer>
-  **Note - <br>
-    Using POST to send form details to endpoint.php </br>
-    Session to validate email address. Upon invalid email address, page will be redirected with error message.
-</footer>
-</body>
-</html>
+  </form>
+
+  <footer>
+    <p>
+      **Note
+        Using POST to send form details to endpoint.php </br>
+        Session to validate email address. Upon invalid email address, page will be redirected with error message.
+    </p>
+   </footer>
+
+ </body>
+ </html>

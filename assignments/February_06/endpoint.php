@@ -12,7 +12,7 @@
         exit();
     }
   //test to check my session vars
-  print_r($_SESSION);
+  //print_r($_SESSION);
 ?>
 
 <!DOCTYPE html>
@@ -23,13 +23,17 @@
 </head>
 
 <body>
-  <?php
-  echo "<h1 class='word'> Hi {$_POST['name']} !</h1>";
-  echo "<h1> Welcome to BSU Mart</h1>";
-  echo "<h1> We received your contact details.</h1>";
-  echo"<h1 class='word'>{$_POST['phone']}</h1>";
-  echo"<h1 class='word'>{$_POST['email']}</h1>";
-  ?>
+  <div class="display_details">
+    <?php
+    echo "<h1 >BSU Mart</h1>";
+    echo "<h2 class='word'> Hi {$_POST['name']} !</h2>";
+    echo "<h2> Welcome to BSU Mart</h1>";
+    echo "<h2> We received your contact details.</h2>";
+    echo"<h2 class='word'>{$_POST['phone']}</h2>";
+    echo"<h2 class='word'>{$_POST['email']}</h2>";
+    ?>
+  </div>
+
 
 </body>
 </html>

@@ -1,9 +1,27 @@
-h1{
+body{
 	font-family: Calibri;
-	 font-family: Calibri;
-	 text-align:center;
+}
+
+h1{
+	text-align:center;
 }
 
 .word{
   color:red;
+}
+
+/*input[type=text]*/
+form{
+	width:600px;
+	margin:auto;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    /*display: inline-block;*/
+    border: 1px solid #ccc; /*gray border*/
+    border-radius: 4px;
+    box-sizing: border-box;
 }

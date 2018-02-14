@@ -1,15 +1,41 @@
-h1{
+body{
 	font-family: Calibri;
-	 font-family: Calibri;
-	 text-align:center;
+}
+
+h1{
+	text-align:center;
+	padding: 20px;
+	margin: auto;
+	background-color: gray;
+	color: white;
 }
 
 .word{
   color:red;
 }
 
-.error_m{
-	color:red;
-	background-color: yellow;
-	border: dashed blue;
+/*input[type=text]*/
+form{
+	width:600px;
+	margin:auto;
+	box-shadow: 0 5px 10px 2px rgba(0,0,0,0.2);
+}
+
+input,textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    /*display: inline-block;*/
+    border: 1px solid #ccc; /*gray border*/
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.display_details{
+	width: 400px;
+	margin: 20px auto;
+	padding: 10px;
+	box-shadow: 0 5px 10px 2px rgba(0,0,0,0.2);
+	background-color: #f9bbbb;
+	text-align: center;
 }
