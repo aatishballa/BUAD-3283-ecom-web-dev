@@ -23,9 +23,12 @@
 </head>
 
 <body>
+
+ <?php
+   echo "<h1 >BSU Mart</h1>";
+  ?>
   <div class="display_details">
     <?php
-    echo "<h1 >BSU Mart</h1>";
     echo "<h2 class='word'> Hi {$_POST['name']} !</h2>";
     echo "<h2> Welcome to BSU Mart</h1>";
     echo "<h2> We received your contact details.</h2>";
