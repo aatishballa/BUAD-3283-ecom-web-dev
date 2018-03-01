@@ -1,7 +1,3 @@
-<?php
-  session_start();
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,18 +8,9 @@
 </head>
 
 <body>
-    <?php
-         if (isset($_SESSION['error_message'])) {
-           echo '<h1 class="word">' . $_SESSION['error_message'] . '</h1>';
-           unset($_SESSION['error_message']);
-         }
-       ?>
-<h1>Register and be a member of BSU Mart</h1>
+	   
 <form action="endpoint.php" method="post">
   <fieldset>
-    <legend>
-      Sign Up
-    </legend>
     <label>Name: </label>
     <input type="text" name="name" value="" id="name" placeholder="Your name"/> <br />
 
@@ -42,17 +29,11 @@
       <textarea id="comment" name="comment" rows="8" cols="40"></textarea>
     </div>
 
-    <input type="submit" name="submit" value="Submit" id="submit"">
+    <input type="submit" name="submit" value="Submit" id="submit">
   </fieldset>
   </form>
 
-  <footer>
-    <p>
-      **Note
-        Using POST to send form details to endpoint.php </br>
-        Session to validate email address. Upon invalid email address, page will be redirected with error message.
-    </p>
-   </footer>
+
 
  </body>
  </html>

@@ -1,5 +1,6 @@
 body{
 	font-family: Calibri;
+	background-color:green;
 }
 
 h1{
@@ -18,8 +19,7 @@ h1{
 form{
 	width:600px;
 	margin:auto;
-	box-shadow: 0 5px 10px 2px rgba(0,0,0,0.2);
-
+	background-color:white;
 }
 
 input,textarea{
