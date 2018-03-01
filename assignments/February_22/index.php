@@ -27,7 +27,7 @@
 		</div>
 		<div class="form-group">
 			  <label>Card number</label>
-			  <input id="CreditCardNumber" class="null card-image form-control" type="text"></input>
+			  <input id="CreditCardNumber" class="form-control" type="text"></input>
 		</div>
 		<div class="form-group">
 			  <label>Expiry date</label>
