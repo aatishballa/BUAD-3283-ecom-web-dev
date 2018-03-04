@@ -1,5 +1,6 @@
 <?php
-require 'sdk-php-master/autoload.php';
+//require 'sdk-php-master/autoload.php';
+require_once dirname(__DIR__) . '\sdk-php-master\autoload.php';
 
 use net\authorize\api\contract\v1 as AnetAPI;
 use net\authorize\api\controller as AnetController;
@@ -8,7 +9,7 @@ define("AUTHORIZENET_LOG_FILE","phplog");
 
 // Common setup for API credentials
 $merchantAuthentication = new AnetAPI\MerchantAuthenticationType();
-$merchantAuthentication->setName("2L27nRcn"); //""
+$merchantAuthentication->setName("2L27nRcn"); // just for text will use from env file later
 $merchantAuthentication->setTransactionKey("3yr9Zp8n8H72fN6P");
 $refId = 'ref' . time();
 
