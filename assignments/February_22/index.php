@@ -18,10 +18,10 @@
 </head>
 <body>
 <div class="container col-sm-6">
-	<form action="endpoint.php" method="post">
+	<form action="endpoint0.php" method="post">
 		<div class="form-group">
 			  <label>Payment amount</label>
-			  <input id="PaymmentAmount" name="PaymmentAmount"class="form-control" type="text" maxlength="255"></input>
+			  <input id="PaymentAmount" name="PaymentAmount"class="form-control" type="text" maxlength="255"></input>
 		</div>
 		<div class="form-group">
 			  <label>Name on card</label>
@@ -33,7 +33,7 @@
 		</div>
 		<div class="form-group">
 			  <label>Expiry date</label>
-			  <input id="ExpiryDate" name="ExpiryDate" class="form-control" type="text" placeholder="MM / YY" maxlength="7"></input>
+			  <input id="ExpiryDate" name="ExpiryDate" class="form-control" type="text" placeholder="YYYY-MM" maxlength="7"></input>
 		</div>
 		<div class="form-group">
 			  <label>Security code</label>

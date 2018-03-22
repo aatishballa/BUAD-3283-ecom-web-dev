@@ -1,18 +1,11 @@
 {
-    "name": "aatishballa/BUAD-3283-ecom-web-dev",
-    "authors": [
-        {
-            "name": "Aatish Balla",
-            "email": "aatishballa@gmail.com"
-        }
-    ],
-    "require": {
-	    "php": ">=5.6",
-        "authorizenet/authorizenet": "~1.9.5"
-		"ext-curl": "*",
-        "ext-json": "*",
-        "ext-simplexml": "*",
-        "ext-xmlwriter": "*",
-        "goetas-webservices/xsd2php-runtime":"^0.2.2"
-	}
+  "require": {
+    "php": ">=5.6",
+    "ext-curl": "*",
+    "authorizenet/authorizenet": ">=1.9.3"
+  },
+  
+   "autoload": {
+    "classmap": ["constants"]
+  }
 }
